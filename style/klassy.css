@@ -88,6 +88,10 @@ a{
     width: 200px;
     background: #f7f7f7;
     visibility: hidden;
+    /*top: 50px;*/
+    transform: translateY(35px);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
 }
 
 .nav-main__link-page-list{
@@ -116,6 +120,9 @@ a{
 
 .nav-main__list-item.is-hover:hover .nav-main__item-link-page{
     visibility: visible;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
 }
 
 /*~~~~~~~~~~~ BANNER ~~~~~~~~~~*/
@@ -194,6 +201,11 @@ a{
     font-size: 36px;
     font-family: 'FontAwesome';
     color: #FFF;
+    opacity: 0.4;
+}
+
+.section-banner__right-content__btn:hover{
+    opacity: 1;
 }
 
 .section-banner__right-content__btn.left{
